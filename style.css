@@ -26,22 +26,28 @@
   height: auto;
 }
 
-nav ul {
+#logo_nav nav ul {
   list-style: none;
   display: flex;
 }
 
-nav li {
+#logo_nav nav li {
   margin-right: 55px;
 }
 
-nav a {
+#logo_nav nav a {
   font-size: 0.9em;
   text-decoration: none;
   color: black;
 }
 
-.s_inscrire {
+#logo_nav nav a:hover {
+  color: #0065FC;
+  border-top: 3px #0065FC solid;
+
+}
+
+#logo_nav .s_inscrire {
   color: #0065FC;
 }
 
@@ -62,12 +68,19 @@ nav a {
 
 #barre_de_recherche {
   display: flex;
-  
+
 }
 
 #barre_de_recherche img {
   width: 13px;
+  margin: 6px;
 }
+
+#barre_de_recherche form {
+  margin: 6px;
+}
+
+
 
 
 
