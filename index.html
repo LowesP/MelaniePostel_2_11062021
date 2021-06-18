@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Reservia</title>
@@ -8,14 +9,16 @@
 
 <body>
 <div id="bloc_page">
-    <!--Header Logo et Nav-->
+
+    <!--Header Logo,Nav et Présentation-->
+
     <header>
         <div id="logo_nav">
             <img src="img/logo/Reservia@3x.png" alt="Logo Reservia">
         
-            <nav>
+            <nav class="header">
             <ul>
-                <li><a href="#">Hébergements</a></li>
+                <li><a href="#" class="hebergement active">Hébergements</a></li>
                 <li><a href="#">Activités</a></li>
                 <li><a href="#" class="s_inscrire"><strong>S'inscrire</strong></a></li>
             </ul>
@@ -26,43 +29,53 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
-            <div id="barre_de_recherche">
-                <img src="img/icon/map-marker-alt-solid.svg" alt="Logo maps">
-                <form method="POST" action="#">
-                    <p><input type="search" placeholder="Marseille, France" name="the_search"></p>
-                    <button class="rechercher_ville" type="button">Rechercher</button>  
-                </form>  
+        <div id="searchbar">
+            <div class="searchlogo"><img src="img/icon/map-marker-alt-solid.svg" alt="Logo maps"></div>
+            <div class="formulaire">
+                <form action="#" method="POST" class="search">
+                    <input class="champ" type="text" placeholder="Marseille, France">
+                    <input class="bouton" type="submit" value="Rechercher">
+                </form>
+            </div>  
         </div>
+
         <div id="filtres">
-            <p>Filtres</p>
+            <span><p>Filtres</p></span>
             <nav class="nav_filtres">
                 <ul>
-                    <li id="economique"><a href="#"><img src="img/icon/money-bill-wave-solid.svg" class="icon_filtre">Economique</a></li>
-                    <li id="familial"><a href="#"><img src="img/icon/child-solid.svg" class="icon_filtre">Familial</a></li>
-                    <li id="romantique"><a href="#"><img src="img/icon/heart-solid.svg" class="icon_filtre">Romantique</a></li>
-                    <li id="animaux"><a href="#"><img src="img/icon/dog-solid.svg" class="icon_filtre">Animaux autorisés</a></li>
+                    <li id="economique"><a href="#"><img src="img/icon/money-bill-wave-solid.svg">Economique</a></li>
+                    <li id="familial"><a href="#"><img src="img/icon/child-solid.svg">Familial</a></li>
+                    <li id="romantique"><a href="#"><img src="img/icon/heart-solid.svg">Romantique</a></li>
+                    <li id="animaux"><a href="#"><img src="img/icon/dog-solid.svg">Animaux autorisés</a></li>
                 </ul>
             </nav>
-            <p>Plus de 500 logements sont disponible dans cette ville</p>
+            <div id="info">
+                <span class="info"><p>Plus de 500 logements sont disponible dans cette ville</p></span>
+                <span class="icon_info"><img src="img/icon/info-solid.svg" alt="Icon Informationelle"></span>
+            </div>
         </div>
     </header>
 
-    <!--Article 1-->
+    <!--Section 1 ( Hébergements à Marseille )-->
+
     <section id="article1">
 
     </section>
 
-    <!--Aside Article 1-->
+    <!--Section 2 Aside ( Les plus populaire ) -->
+
     <aside id="aside">
 
     </aside>
 
-    <!--Article 2-->
+    <!--Section 3 ( Activités à Marseille )-->
+
     <section id="article2">
 
     </section>
 
     <!--Footer-->
+
     <footer>
         <section id="footer">
 

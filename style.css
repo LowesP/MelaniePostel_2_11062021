@@ -1,3 +1,9 @@
+/* Body */
+
+*{
+  margin: 0px;
+}
+
 @font-face {
   font-family: 'Raleway-regular';
   src: url(font/Raleway-Regular.woff);
@@ -7,12 +13,22 @@
 }
 
 #bloc_page {
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
   font-family: 'Raleway-Regular' , Verdana, Geneva, Tahoma, sans-serif;
   background-color: white;
   color: black;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Logo et Nav */
 
 #logo_nav {
   display: flex;
@@ -27,78 +43,118 @@
 }
 
 #logo_nav nav ul {
-  list-style: none;
   display: flex;
 }
-
+.header li{
+  padding: 0 1.2rem;
+}
+.active{
+  border-top: 2px solid #0065FC;
+}
 #logo_nav nav li {
   margin-right: 55px;
 }
 
 #logo_nav nav a {
   font-size: 0.9em;
-  text-decoration: none;
-  color: black;
 }
 
 #logo_nav nav a:hover {
   color: #0065FC;
   border-top: 3px #0065FC solid;
-
 }
+
+
 
 #logo_nav .s_inscrire {
   color: #0065FC;
 }
 
+/* Présentation et Barre de recherche */
+
 #presentation {
   margin: 20px;
-  margin-top: 30px;
+  margin-top: 40px;
+
 }
 
 #presentation h1 {
   font-size: 1.1em;
   font-weight: bold;
-
+  margin-top: 20px;
 }
 
 #presentation p {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 0.8em;
 }
 
-#barre_de_recherche {
+#searchbar {
   display: flex;
-
+  justify-content: flex-start;
+  height: 40px;
+  width: auto;
 }
 
-#barre_de_recherche img {
+#searchbar .searchlogo {
+  height: 13px;
   width: 13px;
-  margin: 6px;
+  padding: 15px;
+  background-color: #F2F2F2;
+  border-radius: 20px 0px 0px 20px;
 }
 
-#barre_de_recherche form {
-  margin: 6px;
+#searchbar .champ {
+  font-family: 'Raleway-regular';
+  height: 40px;
+  width: 160px;
+  font-weight: bold;
+  border-color: #F2F2F2 solid;
 }
 
+#searchbar .bouton {
+  position: absolute;
+  height: 46px;
+  width: 140px;
+  background-color: #0065FC;
+  color: white;
+  font-family: 'Raleway-Regular';
+  font-weight: bold;
+  border:none;
+}
 
+/* Filtres */
 
+#filtres {
+  display: flex;
+  font-weight: bold;
+  
+}
 
+#filtres nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
 
-
-
-
-
-
-
-
-
-
-.icon_filtre {
-  width: 20px;
+.nav_filtres img {
   height: 20px;
+  width: 20px;
+  background-color: #DEEBFF;
+  padding: 10px;
+  border-radius: 50px;
 }
 
+#info {
+  display: flex;
+  
+  font-weight: normal;
+}
 
+#info img {
+  height: 15px;
+  width: 15px;
+}
 
 
 
