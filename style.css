@@ -1,9 +1,5 @@
 /* Body */
 
-*{
-  margin: 0px;
-}
-
 @font-face {
   font-family: 'Raleway-regular';
   src: url(font/Raleway-Regular.woff);
@@ -26,6 +22,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
 }
 
 /* Header Logo et Nav */
@@ -34,11 +35,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 20px;
 }
 
 #logo_nav img {
-  width: 90px;
+  width: 92px;
   height: auto;
 }
 
@@ -48,15 +48,13 @@ a {
 .header li{
   padding: 0 1.2rem;
 }
-.active{
-  border-top: 2px solid #0065FC;
-}
+
 #logo_nav nav li {
-  margin-right: 55px;
+  margin-right: 60px;
 }
 
 #logo_nav nav a {
-  font-size: 0.9em;
+  font-size: 15px;
 }
 
 #logo_nav nav a:hover {
@@ -64,94 +62,99 @@ a {
   border-top: 3px #0065FC solid;
 }
 
-
-
-#logo_nav .s_inscrire {
+header strong {
   color: #0065FC;
 }
 
 /* Présentation et Barre de recherche */
 
-#presentation {
-  margin: 20px;
-  margin-top: 40px;
 
-}
-
-#presentation h1 {
-  font-size: 1.1em;
+h1 {
+  font-size: 20px;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
-#presentation p {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 0.8em;
+p {
+  font-size: 14px;
+  margin-top: -7px;
 }
 
 #searchbar {
-  display: flex;
-  justify-content: flex-start;
-  height: 40px;
-  width: auto;
+  height: 50px;
+  width:366px ;
+  background-color: #F2F2F2;
+  border-radius: 15px;
 }
 
-#searchbar .searchlogo {
-  height: 13px;
+#searchbar img {
+  float: left;
+  height: 50px;
   width: 13px;
-  padding: 15px;
-  background-color: #F2F2F2;
-  border-radius: 20px 0px 0px 20px;
+  padding: 0px 17px 0px 17px;
 }
 
 #searchbar .champ {
-  font-family: 'Raleway-regular';
-  height: 40px;
-  width: 160px;
+  height: 46px;
+  width: 180px;
   font-weight: bold;
-  border-color: #F2F2F2 solid;
+  font-family: 'Raleway-Regular';
+  font-size: 16px;
+  padding-left: 15px;
+  border: none;
 }
 
 #searchbar .bouton {
-  position: absolute;
-  height: 46px;
-  width: 140px;
   background-color: #0065FC;
   color: white;
-  font-family: 'Raleway-Regular';
+  height: 50px;
+  width: 120px;
   font-weight: bold;
+  font-family: 'Raleway-Regular';
+  font-size: 16px;
   border:none;
+  border-radius: 0px 15px 15px 0px;
+  margin-left: -3px;
 }
 
 /* Filtres */
 
 #filtres {
   display: flex;
+  justify-content: flex-start;
+  height: 80px;
+  width: auto;
   font-weight: bold;
-  
+
+}
+
+#filtres p {
+  font-size: 16px;
+  margin-top: 30px;
+
 }
 
 #filtres nav ul {
   display: flex;
-  justify-content: flex-start;
 }
 
+
 .nav_filtres img {
+  float: left;
   height: 20px;
   width: 20px;
   background-color: #DEEBFF;
   padding: 10px;
   border-radius: 50px;
+
 }
 
 #info {
-  display: flex;
-  
   font-weight: normal;
 }
 
 #info img {
+  float: left;
   height: 15px;
   width: 15px;
 }
