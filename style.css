@@ -1,4 +1,4 @@
-/* Body */
+/* -- Body -- */
 
 @font-face {
   font-family: 'Raleway-regular';
@@ -8,11 +8,18 @@
   font-style: normal;
 }
 
+:root {
+  --primary: #0065FC;
+  --seconder: #DEEBFF;
+  --background: #FFFFFF;
+  --inactive: #f2f2f2;
+}
+
 #bloc_page {
-  max-width: 1440px;
-  margin: auto;
+  
+  margin: 0 4% 0 4%;
   font-family: 'Raleway-Regular' , Verdana, Geneva, Tahoma, sans-serif;
-  background-color: white;
+  background-color: var(--background) ;
   color: black;
 }
 
@@ -29,7 +36,7 @@ a:hover {
   color: black;
 }
 
-/* Header Logo et Nav */
+/* -- Header Logo et Nav -- */
 
 #logo_nav {
   display: flex;
@@ -58,15 +65,15 @@ a:hover {
 }
 
 #logo_nav nav a:hover {
-  color: #0065FC;
-  border-top: 3px #0065FC solid;
+  color: var(--primary);
+  border-top: 3px var(--primary) solid;
 }
 
 header strong {
-  color: #0065FC;
+  color: var(--primary);
 }
 
-/* Présentation et Barre de recherche */
+/* -- Présentation et Barre de recherche -- */
 
 
 h1 {
@@ -83,7 +90,7 @@ p {
 #searchbar {
   height: 50px;
   width:366px ;
-  background-color: #F2F2F2;
+  background-color: var(--inactive);
   border-radius: 15px;
   margin-top: 22px;
 }
@@ -106,8 +113,8 @@ p {
 }
 
 #searchbar .bouton {
-  background-color: #0065FC;
-  color: white;
+  background-color: var(--primary);
+  color: var(--background);
   height: 50px;
   width: 120px;
   font-weight: bold;
@@ -118,7 +125,7 @@ p {
   margin-left: -3px;
 }
 
-/* Filtres */
+/* -- Filtres -- */
 
 #filtres {
   display: flex;
@@ -149,18 +156,21 @@ p {
   font-size: 16px;
   height: 25px;
   width: 100%;
-  border: 2px solid #F2F2F2;
+  border: 2px solid var(--inactive);
   padding: 8px 8px 8px 0px;
   border-radius: 100px 100px 100px 100px;
 }
 
-.nav_filtres img {
+.nav_filtres i {
   height: 20px;
   width: 20px;
-  background-color: #DEEBFF;
+  font-size: 17px;
+  text-align: center;
+  background-color: var(--seconder);
   padding: 12px;
   border-radius: 100px;
   margin: 0px 10px 0px -10px;
+  color: var(--primary);
 }
 
 #info {
@@ -173,14 +183,193 @@ p {
   margin-left: 36px;
 }
 
-#info img {
+#info i {
   float: left;
   height: 11px;
   width: 11px;
+  font-size: 11px;
   padding: 6px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid var(--inactive);
   border-radius: 100px;
+  color: var(--primary);
+  text-align: center;
 }
+
+/* -- Section Hebergements à Marseille -- */
+
+.hebergements {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin-bottom: 2em;
+}
+
+.hebergements_marseille {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--inactive);
+  flex-wrap: wrap;
+  width: 68%;
+  padding: 0 1.2em 0 1.2em;
+  border-radius: 25px;
+}
+
+.hebergements_marseille h2 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 1.3em 0 0.7em 0.8em;
+}
+
+.afficher_plus {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 1em 0 2em 0.8em;
+}
+
+.hebergements_populaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--inactive);
+  flex-wrap: wrap;
+  max-width: 29%;
+  padding: 0 2em 0 2em;
+  border-radius: 25px;
+  margin-left: 2em;
+}
+
+.hebergement_carte {
+  background-color: var(--background);
+  max-width: 28%;
+  margin: 1em;
+  padding: 0.3em;
+  cursor:pointer; 
+  transition: all 0.2s  ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0 0 0.6em rgba(0, 0, 0, 15%);
+}
+
+.hebergement_carte_img {
+  height: 7em;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px 20px 0px 0px ;
+  object-fit: cover;
+}
+
+.hebergement_title {
+  padding: 0;
+  margin: 0.2em 0 0 0.5em;
+  font-size: 1.1em;
+}
+
+.hebergement_description {
+  padding: 0;
+  margin: 0.5em 0 0 0.5em;
+  font-size: 1em;
+}
+
+.star_icon {
+  padding: 0;
+  margin: 0.4em 0 0.5em 0.5em;
+  color: var(--primary);
+}
+
+.hebergements_populaire h2 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 1.3em 0 0.7em 0.8em;
+} 
+
+.hebergement_carte_populaire {
+  background-color: var(--background);
+  max-width: 100%;
+  width: 30em;
+  margin-bottom: 1em;
+  padding: 0.3em;
+  cursor:pointer; 
+  transition: all 0.2s  ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0 0 0.6em rgba(0, 0, 0, 15%);
+}
+
+.hebergement_carte_populaire_img {
+  float: left;
+  height: 8em;
+  width: 7em;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
+
+}
+
+
+
+
+
+
+
+/*
+.section_hebergement {
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+}
+
+.section_hebergement h1 {
+  font-size: 19px;
+}
+
+.section_hebergement h6 {
+  font-size: 15px;
+}
+
+.section_hebergement p {
+  font-size: 13px;
+}
+
+.hebergement_carte {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hebergement_link {
+  display: block;
+  height: 150px;
+  width: 250px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+ .hebergement_1 {
+  display: flex;
+  height: 150px;
+  width: 250px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.hebergement_2 {
+  display: flex;
+  height: 150px;
+  width: 250px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.hebergement_3 {
+  display: flex;
+  height: 150px;
+  width: 250px;
+  background-color: white;
+  border-radius: 25px;
+} */
+
+
 
 
 
