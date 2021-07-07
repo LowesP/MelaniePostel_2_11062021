@@ -9,29 +9,27 @@
 </head>
 
 <body>
-<div id="bloc_page">
 
-    <!--Header Logo,Nav et Présentation-->
+    <!-- Header Logo,Nav et Présentation -->
 
     <header>
-        <div id="logo_nav">
-            <img src="img/logo/Reservia@3x.png" alt="Logo Reservia">
-        
+        <div class="logo_nav">
+            <img src="img/logo/Reservia@3x.png" alt="Logo Reservia">        
             <nav>
-            <ul>
-                <li><a href="#" class="hebergement">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
-                <li><a href="#"><strong>S'inscrire</strong></a></li>
-            </ul>
+                <ul>
+                    <li class="hebergement"><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                    <li><a href="#"><strong>S'inscrire</strong></a></li>
+                </ul>
             </nav>
         </div>
-    </header>
+    
 
     <section class="second_header">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
-        <div id="searchbar">
+        <div class="searchbar">
             <img src="img/icon/map-marker-alt-solid.svg" alt="Logo maps">
             <form action="#" method="POST" class="search">
                 <input class="champ" type="text" placeholder="Marseille, France">
@@ -39,10 +37,10 @@
             </form>     
         </div>
 
-        <div id="filtres">
+        <div class="filter">
             <p>Filtres</p>
-            <nav class="nav_filtres">
-                <ul>
+            <nav class="nav_filter">
+                <ul class="filter_types">
                     <li><a href="#"><i class="fas fa-money-bill-wave"></i>Economique</a></li>
                     <li><a href="#"><i class="fas fa-child"></i>Familial</a></li>
                     <li><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
@@ -51,35 +49,36 @@
             </nav>
         </div>
 
-        <div id="info">
+        <div class="info">
             <span><i class="fas fa-info"></i></span>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
+    </header>
 
-    <!--Section 1 ( Hébergements à Marseille )-->
+    <!-- Section 1 ( Hébergements à Marseille ) -->
     
-    <section class="hebergements"> 
+    <section id="hebergements"> 
 
         <div class="hebergements_marseille">
             <h2>Hébergements à Marseille</h2>
             <div class="hebergement_carte">
                 <img class="hebergement_carte_img" src="img/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                <h3 class="hebergement_title">Auberge la Cannebière</h3>
-                <p class="hebergement_description">Nuit à partir de <strong>25€</strong></p>
+                <h3>Auberge la Cannebière</h3>
+                <p>Nuit à partir de <strong>25€</strong></p>
                 <div class="star_icon">
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                    <span class="star_icon_grey"><i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i></span>
                 </div>
             </div>
 
             <div class="hebergement_carte">
                 <img class="hebergement_carte_img" src="img/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                <h3 class="hebergement_title">Hôtel du port</h3>
-                <p class="hebergement_description">Nuit à partir de <strong>52€</strong></p>
+                <h3>Hôtel du port</h3>
+                <p>Nuit à partir de <strong>52€</strong></p>
                 <div class="star_icon">
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
@@ -91,47 +90,47 @@
 
             <div class="hebergement_carte">
                 <img class="hebergement_carte_img" src="img/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                <h3 class="hebergement_title">Hôtel Les mouettes</h3>
-                <p class="hebergement_description">Nuit à partir de <strong>76€</strong></p>
+                <h3>Hôtel Les mouettes</h3>
+                <p>Nuit à partir de <strong>76€</strong></p>
                 <div class="star_icon">
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                    <span class="star_icon_grey"><i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i></span>
                 </div>
             </div>
 
             <div class="hebergement_carte">
                 <img class="hebergement_carte_img" src="img/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                <h3 class="hebergement_title">Auberge de la mer</h3>
-                <p class="hebergement_description">Nuit à partir de <strong>46€</strong></p>
+                <h3>Hôtel de la mer</h3>
+                <p>Nuit à partir de <strong>46€</strong></p>
                 <div class="star_icon">
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                    <span class="star_icon_grey"><i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i></span>
+                    <span class="star_icon_grey"><i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i></span>
                 </div>
             </div>
 
             <div class="hebergement_carte">
                 <img class="hebergement_carte_img" src="img/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                <h3 class="hebergement_title">Auberge Le Panier</h3>
-                <p class="hebergement_description">Nuit à partir de <strong>23€</strong></p>
+                <h3>Auberge Le Panier</h3>
+                <p>Nuit à partir de <strong>23€</strong></p>
                 <div class="star_icon">
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                    <span class="star_icon_grey"><i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i></span>
                 </div>
             </div>
 
             <div class="hebergement_carte">
                 <img class="hebergement_carte_img" src="img/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                <h3 class="hebergement_title">Hôtel chez Amina</h3>
-                <p class="hebergement_description">Nuit à partir de <strong>96€</strong></p>
+                <h3>Hôtel chez Amina</h3>
+                <p>Nuit à partir de <strong>96€</strong></p>
                 <div class="star_icon">
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
                     <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
@@ -150,127 +149,126 @@
                 <i class="fas fa-chart-line"></i>
             </div>
             <div class="hebergement_carte_populaire">
-                <img class="hebergement_carte_populaire_img" src="img/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                <h3 class="hebergement_title">Hôtel Le soleil du matin</h3>
-                <p class="hebergement_description_populaire">Nuit à partir de <strong>128€</strong></p>
-                <div class="star_icon">
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                <div class="hcp_left">
+                    <img class="hebergement_carte_populaire_img" src="img/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
+                </div>
+                <div class="hcp_right">
+                    <h3 class="hpc_title">Hôtel Le soleil du matin</h3>
+                    <p class="hebergement_description_populaire">Nuit à partir de <strong>128€</strong></p>
+                    <div class="star_icon_populaire">
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                    </div>
                 </div>
             </div>
+           
             <div class="hebergement_carte_populaire">
-                <img class="hebergement_carte_populaire_img" src="img/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                <h3 class="hebergement_title">Au coeur de l'eau Chambres d'hôtes</h3>
-                <p class="hebergement_description_populaire">Nuit à partir de <strong>71€</strong></p>
-                <div class="star_icon">
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                <div class="hcp_left">
+                    <img class="hebergement_carte_populaire_img" src="img/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
+                </div>
+                <div class="hcp_right">
+                    <h3 class="hpc_title">Au coeur de l'eau<br> Chambres d'hôtes</h3>
+                    <p class="hebergement_description_populaire">Nuit à partir de <strong>71€</strong></p>    
+                    <div class="star_icon_populaire">
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <span class="star_icon_grey"><i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i></span>
+                    </div>
                 </div>
             </div>
+
             <div class="hebergement_carte_populaire">
-                <img class="hebergement_carte_populaire_img" src="img/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                <h3 class="hebergement_title">Hôtel Tout bleu et Blanc</h3>
-                <p class="hebergement_description_populaire">Nuit à partir de <strong>68€</strong></p>
-                <div class="star_icon">
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                <div class="hcp_left">
+                    <img class="hebergement_carte_populaire_img" src="img/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
+                </div>
+                <div class="hcp_right">
+                    <h3 class="hpc_title">Hôtel Tout bleu et Blanc</h3>
+                    <p class="hebergement_description_populaire">Nuit à partir de <strong>68€</strong></p>
+                    <div class="star_icon_populaire">
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
+                        <span class="star_icon_grey"><i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i></span>
+                    </div>
                 </div>
             </div>
 
         </div>
 
     </section>
-    <!-- <section class="section_hebergement">
-        <h1>Hébergements à Marseille</h1>
-         <div class="hebergements_carte">
-             <div class="hebergement_1"> 
-                <a href="#" class="hebergement_link">
-                    <img src="img/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo d'une chambre à l'Auberge La Cannebière">
-                    <h6>Auberge la Cannebière</h6>
-                    <p>Nuit à partir de <span class="low_price">25€</span></p>
-                    <div class="star_icon">
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    </div>
-                </a>
-             </div> 
-             <div class="hebergement_2"> 
-                <a href="#" class="hebergement_link">
-                    <img src="img/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo d'une chambre à l'Hotel du port">
-                    <h6>Hotel du port</h6>
-                    <p>Nuit à partir de 52€</p>
-                    <div class="star_icon">
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    </div>
-                </a>
-             </div> 
-             <div class="hebergement_3"> 
-                <a href="#" class="hebergement_link">
-                    <img src="img/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo d'une chambre à l'Hotel Les mouettes">
-                    <h6>Hôtel Les mouettes</h6>
-                    <p>Nuit à partir de 76€</p>
-                    <div class="star_icon">
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                        <i class="fas fa-star" alt="Icon d'étoile représentant l'évaluation"></i>
-                    </div>
-                </a>
-             </div> 
-            <div></div>
-            <div></div>
-            <div></div>
+
+    <!-- Section 3 ( Activités à Marseille ) -->
+
+    <section id="activites">
+
+        <h2>Activités à Marseille</h3>
+        <div class="grille_activites">
+            <a href="#" class="carte_vieux_port">
+                <img src="img/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du vieux port">
+                <h3>Vieux Port</h3>
+            </a>
+
+            <a href="#" class="carte_fort_de_pomegues">
+                <img src="img/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort du Pomegues">
+                <h3>Fort de Pomègues</h3>
+            </a>
+
+            <a href="#" class="carte_ile_du_frioul">
+                <img src="img/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo de l'Ile de Frioul">
+                <h3>Ile du Frioul</h3>
+            </a>
+
+            <a href="#" class="carte_parc_national">
+                <img src="img/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo du Parc National des Calanques">
+                <h3>Parc National des Calanques</h3>
+            </a>
+
+            <a href="#" class="carte_notre_dame">
+                <img src="img/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de Notre-Dame-de-la-Garde">
+                <h3>Notre-Dame-de-la-Garde</h3>
+            </a>
+
+            <a href="#" class="carte_parc_longchamp">
+                <img src="img/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo du Parc Longchamp">
+                <h3>Parc Longchamp</h3>
+            </a>
+
         </div>
-        <p><a href="#">Afficher plus</a></p>
-    </section> -->
-
-    <!--Section 2 Aside ( Les plus populaire ) -->
-
-    <aside class="aside">
-
-    </aside>
-
-    <!--Section 3 ( Activités à Marseille )-->
-
-    <section id="article2">
-
     </section>
 
-    <!--Footer-->
+    <!-- Footer -->
 
-    <footer>
-        <section id="footer">
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><h5>A propos</h5></li>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialités</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><h5>Nos hébergements</h5></li>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hotel</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><h5>Assistance</h5></li>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </footer>  
 
-        </section>
-    </footer>
-  
-
- 
-
-
-
-
-
-
-</div>
 </body>
-
 
 </html>
