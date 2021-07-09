@@ -56,6 +56,7 @@ header {
   align-items: center;
   height: 6em;
   width: 100%;
+  font-weight: bold;
 }
 
 .logo_nav img {
@@ -68,15 +69,45 @@ header {
 }
 
 .logo_nav nav li {
-  margin-right: 3em;
   font-size: 1em;
 }
 
-header strong {
+.logo_nav span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 6em;
+  width: 10em;
+}
+
+.nav_hebergement {
+  border-top: 0.3em solid var(--primary);
   color: var(--primary);
 }
 
-/* -- Présentation et Barre de recherche -- */
+.nav_activites {
+  padding-top: 0.3em;
+}
+
+.nav_activites:hover {
+  border-top: 0.3em solid var(--primary);
+  color: var(--primary);
+  padding: 0;
+}
+
+header strong {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 6em;
+  width: 10em;
+  padding-top: 0.3em;
+  color: var(--primary);
+}
+
+/* -- Titre et Barre de recherche -- */
 
 
 h1 {
@@ -93,15 +124,15 @@ p {
 
 .searchbar {
   display: flex;
-  height: 3em;
+  height: 3.2em;
   margin: 1.2em 0;
   border-color: 2px solid var(--inactive);
 }
 
 .searchbar img {
-  height: 1.1em;
-  width: 1.1em;
-  padding: 1.1em 1.2em;
+  height: 1em;
+  width: 1em;
+  padding: 1.1em;
   background-color: var(--inactive);
   border-radius: 15px 0 0 15px;
 }
@@ -111,11 +142,11 @@ p {
   width: 13em;
   font-weight: bold;
   font-family: 'Raleway-Regular';
-  font-size: 1em;
+  font-size: 1.1em;
   padding-left: 1.2em;
-  box-shadow: none;
-  border-style: none;
-  
+  border: 1px solid var(--inactive);
+  height: -moz-available;
+  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
 }
 
 .searchbar .bouton {
@@ -125,7 +156,7 @@ p {
   width: 8em;
   font-weight: bold;
   font-family: 'Raleway-Regular';
-  font-size: 1em;
+  font-size: 1.1em;
   border:none;
   border-radius: 0px 15px 15px 0px;
   margin-left: -0.3em;
@@ -137,13 +168,14 @@ p {
   display: flex;
   align-items: center;
   font-weight: bold;
-  margin: 2em 0;
+  margin: 1.2em 0;
 }
 
 .filter p {
   display: flex;
   font-size: 1.4em;
   font-weight: bold;
+  margin-right: 0.8em;
 }
 
 .filter ul {
@@ -152,15 +184,13 @@ p {
 
 .filter li {
   display: inline-block;
-  height: auto;
+  height: 2.5em;
   width: auto;
-  margin: 0 1.1em;
-  padding-right: 1.2em;
   border: 2px solid var(--inactive);
   border-radius: 100px;
-  font-size: 1em;
   cursor:pointer; 
   transition: all 0.2s  ease-in-out;
+  margin: 0.6em;
 }
 
 .filter li:hover {
@@ -172,10 +202,15 @@ p {
   width: 1.1em;
   text-align: center;
   background-color: var(--seconder);
-  padding: 1.2em;
+  padding: 0.8em;
   border-radius: 100px;
   color: var(--primary);
-  margin-right: 0.8em;
+}
+
+.filter_types span {
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1.1em;
 }
 
 .info {
@@ -359,7 +394,8 @@ p {
 
 #activites {
   max-width: 100%;
-  margin: 3.8em;
+  height: 100%;
+  margin: 3.5em 3.8em 7em 3.8em;
   background-color: var(--background);
 }
 
@@ -370,7 +406,7 @@ p {
 .grille_activites a {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 0 0.9em rgba(0, 0, 0, 13%);
@@ -384,10 +420,7 @@ p {
 }
 
 .grille_activites img {
-  position: relative;
-  flex: 1;
   height: 100%;
-  width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
@@ -397,13 +430,14 @@ p {
   padding: 1em;
   box-shadow: 0 0 0.9em rgba(0, 0, 0, 13%);
   border-radius: 0 0 20px 20px;
+  background-color: var(--background);
 }
 
 .grille_activites {
   display: grid;
   grid-template-columns: 23% 23% 23% 23%;
-  grid-template-rows: 10rem 2rem 2rem 10rem;
   grid-gap: 2em;
+  grid-template-rows: 10rem 2rem 2rem 10rem;
 }
 
 .carte_vieux_port {
