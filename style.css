@@ -59,6 +59,11 @@ header {
   font-weight: bold;
 }
 
+.logo_nav nav {
+  display: flex;
+  text-align: center;
+}
+
 .logo_nav img {
   width: 6em;
   height: auto;
@@ -81,6 +86,10 @@ header {
   width: 10em;
 }
 
+.register-media {
+  display: none;
+}
+
 .nav_hebergement {
   border-top: 0.3em solid var(--primary);
   color: var(--primary);
@@ -96,7 +105,7 @@ header {
   padding: 0;
 }
 
-header strong {
+.register {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,16 +114,25 @@ header strong {
   width: 10em;
   padding-top: 0.3em;
   color: var(--primary);
+  cursor:pointer; 
+  transition: all 0.2s  ease-in-out;
+}
+
+.register:hover {
+  transform: scale(1.03);
+  color: var(--inactive);
 }
 
 /* -- Titre et Barre de recherche -- */
 
+.second_header {
+  margin: 0 3.8em;
+}
 
 h1 {
   font-size: 1.8em;
   font-weight: bold;
   margin-top: 0.5em;
-  letter-spacing: 1px;
 }
 
 p {
@@ -126,18 +144,19 @@ p {
   display: flex;
   height: 3.2em;
   margin: 1.2em 0;
-  border-color: 2px solid var(--inactive);
+  border-color: var(--inactive);
 }
 
-.searchbar img {
+.searchbar i {
   height: 1em;
   width: 1em;
   padding: 1.1em;
   background-color: var(--inactive);
   border-radius: 15px 0 0 15px;
+  text-align: center;
 }
 
-.searchbar .champ {
+.champ {
   height: 100%;
   width: 13em;
   font-weight: bold;
@@ -149,17 +168,21 @@ p {
   height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
 }
 
-.searchbar .bouton {
+.research-button{
   background-color: var(--primary);
   color: var(--background);
   height: 100%;
-  width: 8em;
   font-weight: bold;
   font-family: 'Raleway-Regular';
   font-size: 1.1em;
   border:none;
   border-radius: 0px 15px 15px 0px;
   margin-left: -0.3em;
+  padding: 0 1.1em;
+}
+
+.research-button i {
+  display: none;
 }
 
 /* -- Filtres -- */
@@ -184,10 +207,8 @@ p {
 
 .filter li {
   display: inline-block;
-  height: 2.5em;
-  width: auto;
   border: 2px solid var(--inactive);
-  border-radius: 100px;
+  border-radius: 100px; 
   cursor:pointer; 
   transition: all 0.2s  ease-in-out;
   margin: 0.6em;
@@ -195,11 +216,13 @@ p {
 
 .filter li:hover {
   transform: scale(1.03);
+  background-color: var(--inactive);
 }
 
 .nav_filter i {
   height: 1.1em;
   width: 1.1em;
+  font-size: 1.1em;
   text-align: center;
   background-color: var(--seconder);
   padding: 0.8em;
@@ -211,7 +234,7 @@ p {
   width: 100%;
   padding: 0.8em;
   font-size: 1.1em;
-}
+} 
 
 .info {
   display: flex;
@@ -400,7 +423,7 @@ p {
 }
 
 #activites h2 {
-  margin: 1em 0;
+  margin: 1.3em 0 0.9em 0.8em
 }
 
 .grille_activites a {
@@ -484,7 +507,6 @@ p {
   width: 100%;
   height: 100%;
   margin: 2.5em;
-  
 }
 
 .footer h5 {
@@ -501,6 +523,234 @@ p {
  border-bottom: 2px solid black;
 }
 
+/* -- Responsive phone -- */
+
+@media screen and (max-width: 768px) {
+
+  body { 
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    font-size: 90%;
+  }
+
+  header {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo_nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    height: auto;
+  }
+
+  .logo_nav img {
+    display: flex;
+    align-items: flex-start;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 1em 0 1em 1.6em;
+  }
+
+  .logo_nav nav { 
+    max-width: 100%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+   .logo_nav a {
+     width: 100%;
+  }
+
+   .logo_nav span {
+     max-width: 100%;
+     width: auto;
+     height: 3em;
+  }
+
+  .nav_hebergement {
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0;
+    border-top: none;
+    border-bottom: 0.2em solid var(--primary);
+  }
+
+  .nav_activites {
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0;
+    border-top: none;
+    border-bottom: 0.2em solid var(--inactive);
+    padding-top: 0;
+  }
+
+  .nav_activites:hover {
+    border-top: none;
+    border-bottom: 0.2em solid var(--primary);
+    margin: 0;
+  }
+
+  .register{
+    display: none;
+  }
+
+  .register-media {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 90%;
+    color: var(--primary);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 1em 1.6em 1em 0;
+  }
+
+  .second_header {
+    width: 100%;
+    height: auto;
+    margin: 2em 1em 1em 1em;
+  }
+
+  .searchbar {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .searchbar .champ {
+    max-width: 100%;
+    width: auto;
+  }
+  
+  .research-button span {
+    display: none;
+  }
+
+  .research-button i {
+    display: block;
+    color: var(--background);
+    background-color: var(--primary);
+    padding: 0;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: normal;
+  }
+
+  .filter li { 
+    margin: 0.5em 0.5em 0.2em 0;
+  }
+
+  #hebergements {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .hebergements_populaire {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 0 2em 0;
+  }
+
+  .hebergement_carte_populaire {
+    max-width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .hcp_right {
+    width: 100%;
+    height: auto;
+    text-align: left;
+  }
+
+  .hcp_left {
+    flex: none;
+  }
+
+  .hebergements_marseille {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: auto;
+    background-color: var(--background);
+    padding: 0;
+    margin: 1em;
+  }
+
+  .hebergements_marseille h2 {
+    margin: 1em 0;
+  }
+
+  .afficher_plus {
+    font-size: 1.2em;
+    margin: 1em 0 0 0;
+  }
+
+  .hebergement_carte {
+    max-width: 100%;
+    width: auto;
+    margin: 1em 0;
+  }
+
+  .hebergement_carte img {
+    max-width: 100%;
+    width: 100%;
+    height: 9em;
+  }
+
+  #activites {
+    margin: 1em;
+  }
+
+  #activites h2 {
+    margin: 1.5em 0;
+  }
+
+  .grille_activites {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .grille_activites a {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .grille_activites img {
+   max-width: 100%;
+   height: 9em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+    height: 100%;
+    padding: 2em 1em 5em 1em;
+  }
+
+  .footer nav {
+    margin: 1em 0;
+  }
+
+}
 
 
 
